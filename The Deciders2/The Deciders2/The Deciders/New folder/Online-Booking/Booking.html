@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HLALANATHI B&B</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">HLALANATHI B&B</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Availability</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Policies <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#cancellation">Cancellation Policy</a></li>
+                <li><a href="#terms">Terms,condotions and privacy policy</a></li>
+                <li><a href="#game">Play Connect-4</a></li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <section class="book">
+        
+        <form id="bookingForm" class="book-form">
+            <div class="form-item">
+                <label for="selectedDate">Check-In:</label>
+                <input type="date" id="selectedDate" required>
+            </div>
+            <div class="form-item">
+                <label for="selectedDate">Check-Out:</label>
+                <input type="date" id="selectedDate" required>
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult" required>
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="0" value="0" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>    
+    
+            <button type="submit" class="btn">Book</button>
+        </form>
+        <div id="alert"></div>
+        <script src="java.js"></script>
+    </section>
+
+    <div class="cancellation" id="cancellation">
+        <h3>Cancellation policy</h3>
+        <p>If the booking is cancelled within 7 days prior to the arrival date, 100% Cancellation fees applies
+            If the booking is cancelled on the same day, 100% Cancellation fees applies
+            This also applies for a “No Show”.</p>
+      </div>
+    
+      <div class="terms" id="terms">
+        <h3>Terms,condotions and privacy policy</h3>
+        <p>Non-smoking property 
+          Strictly no parties 
+          Respect our neighbours and keep noise to a minimum between 10pm and 8am. <br>
+          Ensure dishes are washed and garbage is put outside in the bins on departure. <br>
+          Pets are only allowed in properties clearly advertised as “pet-friendly” or based on prior permission from BNB Made Easy. </p>
+      </div>
+
+      <div class="not">
+        <h1>CONNECT-4</h1>
+        <h2 id="whosturn">Red's Turn</h2>
+      </div>
+
+      <section class="game" id="game">
+        
+        <div class="game-board">
+    
+            <ul class="column" id="c1">
+                <p id="c1r6"></p>
+                <p id="c1r5"></p>
+                <p id="c1r4"></p>
+                <p id="c1r3"></p>
+                <p id="c1r2"></p>
+                <p id="c1r1"></p>
+            </ul>
+            <ul class="column" id="c2">
+                <p id="c2r6"></p>
+                <p id="c2r5"></p>
+                <p id="c2r4"></p>
+                <p id="c2r3"></p>
+                <p id="c2r2"></p>
+                <p id="c2r1"></p>
+            </ul>
+            <ul class="column" id="c3">
+                <p id="c3r6"></p>
+                <p id="c3r5"></p>
+                <p id="c3r4"></p>
+                <p id="c3r3"></p>
+                <p id="c3r2"></p>
+                <p id="c3r1"></p>
+            </ul>
+            <ul class="column" id="c4">
+                <p id="c4r6"></p>
+                <p id="c4r5"></p>
+                <p id="c4r4"></p>
+                <p id="c4r3"></p>
+                <p id="c4r2"></p>
+                <p id="c4r1"></p>
+            </ul>
+            <ul class="column" id="c5">
+                <p id="c5r6"></p>
+                <p id="c5r5"></p>
+                <p id="c5r4"></p>
+                <p id="c5r3"></p>
+                <p id="c5r2"></p>
+                <p id="c5r1"></p>
+            </ul>
+            <ul class="column" id="c6">
+                <p id="c6r6"></p>
+                <p id="c6r5"></p>
+                <p id="c6r4"></p>
+                <p id="c6r3"></p>
+                <p id="c6r2"></p>
+                <p id="c6r1"></p>
+            </ul>
+            <ul class="column" id="c7">
+                <p id="c7r6"></p>
+                <p id="c7r5"></p>
+                <p id="c7r4"></p>
+                <p id="c7r3"></p>
+                <p id="c7r2"></p>
+                <p id="c7r1"></p>
+            </ul>
+    
+    
+        </div>
+      </section>
+
+      <!--<div class="all">
+        <img src="bee.png" alt="" />
+        <input type="text" id="inp" />
+        <button id="btn">Generate a new word</button>
+  
+        <div class="cont">
+          <button id="speak" class="btn2">Speak</button>
+          <button id="sub" class="btn2">Submit</button>
+        </div>
+      </div>
+
+
+
+      <section class="rules">
+        <h2><i>Game Rules</i></h2>
+        <p>Listen attentively to the speaker.<br>
+          Type the correct word.<br>
+          Click submit button.<br>
+          Our word list does not include words that are offensive, obscure, hyphenated or proper nouns.</p>
+      </section>
+-->
+  
+      <section class="butt" id="butt">
+        <button type="button" class="btn"><a href="index.html" style="text-decoration: none;">HOME</a></button>
+      </section>
+    
+      
+
+</body>
+</html>
+<script>
+  /*let word;
+
+  const words = ["Africa", "Langa", "Cape town", "Capaciti", "Reason"];
+ 
+
+  document.getElementById('btn').addEventListener('click',function(){
+      num=Math.floor(Math.random()*(5))
+      word=words[num]
+
+      let voice=new SpeechSynthesisUtterance()
+      voice.text=word
+      speechSynthesis.speak(voice)
+
+  })
+
+  document.getElementById('sub').addEventListener('click',function(){
+      if(document.getElementById('inp').value==word){
+          alert("CORRECT !!")
+      }
+
+      else{
+          alert(`INCORRECT \n It was ${word}`)
+      }
+
+      document.getElementById('inp').value=''
+
+  })
+
+  document.getElementById('speak').addEventListener('click',function(){
+      let voice=new SpeechSynthesisUtterance()
+      voice.text=word
+      speechSynthesis.speak(voice)
+  })
+
+*/
+
+
+  val_c1 = 1
+val_c2 = 1
+val_c3 = 1
+val_c4 = 1
+val_c5 = 1
+val_c6 = 1
+val_c7 = 1
+turn = 1
+
+
+//checking the winner
+
+function check(player) {
+    setTimeout(() => {
+
+        for (i = 1; i <= 7; i++) {
+            for (j = 1; j <= 3; j++) {
+                if (document.getElementById(`c${i}r${j}`).style.backgroundColor == `${player}` && document.getElementById(`c${i}r${j + 1}`).style.backgroundColor == `${player}` && document.getElementById(`c${i}r${j + 2}`).style.backgroundColor == `${player}` && document.getElementById(`c${i}r${j + 3}`).style.backgroundColor == `${player}`) {
+                    alert(`${player} wins`)
+                    location.reload()
+                }
+
+            }
+        }
+
+        for (i = 1; i <= 6; i++) {
+            for (j = 1; j <= 4; j++) {
+                if (document.getElementById(`c${j}r${i}`).style.backgroundColor == `${player}` && document.getElementById(`c${j + 1}r${i}`).style.backgroundColor == `${player}` && document.getElementById(`c${j + 2}r${i}`).style.backgroundColor == `${player}` && document.getElementById(`c${j + 3}r${i}`).style.backgroundColor == `${player}`) {
+                    alert(`${player} wins`)
+                    location.reload()
+                }
+
+            }
+
+        }
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= 3; j++) {
+                if (document.getElementById(`c${i}r${j}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 1}r${j + 1}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 2}r${j + 2}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 3}r${j + 3}`).style.backgroundColor == `${player}`) {
+                    alert(`${player} wins`)
+                    location.reload()
+                }
+
+            }
+        }
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 6; j >= 4; j--) {
+                if (document.getElementById(`c${i}r${j}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 1}r${j - 1}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 2}r${j - 2}`).style.backgroundColor == `${player}` && document.getElementById(`c${i + 3}r${j - 3}`).style.backgroundColor == `${player}`) {
+                    alert(`${player} wins`)
+                    location.reload()
+                }
+
+            }
+        }
+
+    }, 200)
+
+}
+
+
+
+//playing
+document.querySelectorAll(".column").forEach((e) => {
+    e.addEventListener("click", () => {
+
+        sum = eval(`val_${e.id}`)
+        eval(`val_${e.id}++`)
+
+
+        if (sum <= 6 && turn % 2 != 0) {
+            document.getElementById(`${e.id}r${sum}`).style.backgroundColor = "red"
+            turn++
+            check('red')
+            document.getElementById("whosturn").innerText = "Yellow's Turn"
+        }
+        
+        else if (sum <= 6 && turn % 2 == 0) {
+            document.getElementById(`${e.id}r${sum}`).style.backgroundColor = "yellow"
+            turn++
+            check('yellow')
+            document.getElementById("whosturn").innerText = "Red's Turn"
+
+        }
+       
+
+
+
+
+    })
+})
+
+</script>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HLALANATHI BNB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6114.js"
+    crossorigin="anonymous"></script> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="response.js" defer></script>
+    <script src="app.js" defer></script>
+
+
+    <link rel="icon" href="backround.jpg" type="backround">
+    <script type="text/javascript">
+        <!--
+            function sayHello(){
+                alert("Thank you for rating us")
+            }
+            //-->
+    </script>
+</head>
+<body>
+
+        <!----header-->
+        
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <h2>HLALANATHI B&B</h2>
+            </div>
+            <div class="topnav-right">
+
+                <a href="index.html" class="active">Home</a>
+                <a href="#services">services</a>
+                <a href="#rooms">rooms</a>
+                <a href="#customers">customers</a>
+                <a href="#contact">contact</a>
+                
+            </div>
+            
+            
+          </div>
+
+           <div class="head-bottom-flex" id="hbf" onmouseover="mouseOver()" onmouseout="mouseOut()">
+            <script>
+                function mouseOver() {
+                  document.getElementById("hbf").style.color = "blue";
+                }
+                
+                function mouseOut() {
+                  document.getElementById("hbf").style.color = "black";
+                }
+                </script>     
+            <h2>Relax, Refresh, Recharge and Repeat</h2>
+            <p> Hlalanathi B&B is a romantic destination on the edge of the Atlantic Ocean.
+                     It is ideal for anything from a luxury beach holiday to a weekend breakaway or a honeymoon.
+                     This luxury bed and breakfast near Cape Town is a whale watching haven nestled
+                       away in the tranquil Pringle Bay nature conservation.
+                        It is less than an hour drive from CT International Airport and boasts with world class beaches,
+                         hiking trails, surf spots and a vast selection of outdoor activities.
+                          This newly refurbished accommodation has seven modern sea facing bedrooms
+                           as well as a two bedroom ocean “Residence” with unbeatable sea views.</p>
+                        
+        </div>
+       </header>
+       <!--end of header-->
+
+       
+       <!---side navbar-->
+       <!---- <div class="sidenav" id="sidenav">
+            <button class="cancel-btn" id="cancel-btn"> cancel</button>
+               
+            
+
+            <ul class="navbar">
+                <li><a href="#header">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#rooms">rooms</a></li>
+                <li><a href="#customers">customers</a></li>
+            </ul>
+             <button class="btn sign-up">sign up</button>
+             <button class="btn log-in">log in</button>
+       </div> -->
+       <!---end of side nav bar-->
+
+       <!--fullscreen modal-->
+       <div id="modal"></div>
+       <!---end of fullscreen modal-->
+
+
+
+
+       <!-----body content-->
+       <section class="services sec-width" id="services">
+                <div class="title">
+                    <h2>services</h2>
+                </div>
+                <div class="services-container">
+                    <!--single service-->
+                    <article class="service">
+                        <div class="service-icon">
+                            <span>
+                                <i class='bx bxs-food-menu'></i>
+                            </span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Food Service/ Food Runner</h2>
+                            <p> Local and international dishes, live cooking station, open for breakfast, 
+                                lunch, and dinner. Our bar is available for light 
+                                meals and In-Room dining is available. <button type="button" class="btn"> Know More</button>
+                        </div>
+                    </article>
+                    <!--end of single service-->
+
+                     <!--single service-->
+                     <article class="service">
+                        <div class="service-icon">
+                            <span>
+                                <i class='bx bx-drink' ></i>
+                            </span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Refreshments</h2>
+                            <p>Enjoy a glass of wine from one of Cape Town’s award-winning vineyards
+                                 in the Bar or indulge in our Restaurant where
+                                  our menu showcases specialties of the region</p>
+                                <button type="button" class="btn"> Know More</button>
+                        </div>
+                    </article>
+                    <!--end of single service-->
+
+                     <!--single service-->
+                     <article class="service">
+                        <div class="service-icon">
+                            <span>
+                                <i class='bx bxs-brush-alt' ></i>
+                            </span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Housekeeping</h2>
+                            <p>Our goal is to provide a superior service with open communication
+                                while building a long term relationship with our customers.
+                                Ring a bell for our housekeeping service and we will gladly clean your room.
+                                It is our goal to clean your room to your satisfaction.
+                                </p>
+                                <button type="button" class="btn"> Know More</button>
+                        </div>
+                    </article>
+                    <!--end of single service-->
+
+                     <!--single service-->
+                     <article class="service">
+                        <div class="service-icon">
+                            <span>
+                                <i class='bx bxs-lock'></i>
+                            </span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Room Security</h2>
+                            <p>It is our priority to protect our guests. We offer a number of safety and  security measures like
+                                Card Locks: Guest room locking systems these days include punch and magnetic key cards
+
+                                Security Guards: Trained security guards working 24-hours every day to provide the best in safety and security for the guests.
+                                
+                                Security Cameras: Security cameras with digital technology.
+
+                                Fire Alarms: Smoke detectors and fire alarms in each guest room.
+                                
+                                Emergency Power: Provision for emergency power in case of a power cut to provide uninterrupted guest service.</p>
+                                <button type="button" class="btn"> Know More</button>
+                        </div>
+                    </article>
+                    <!--end of single service-->
+                </div>
+       </section>
+
+       <section class="rooms sec-width" id="rooms">
+              <div class="title">
+                   <h2>rooms</h2>
+              </div>
+              <div class="rooms-container">
+                <!---single room-->
+                <article class="room">
+                    <div class="room-image">
+                       <img src="bed5.png" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Uncapped Wi-Fi
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Coffee and Tea making facilities
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                In room safe deposit box
+                            </li>
+                        </ul>
+                        <p>A comfortable spacious contemporary styled apartment with a full working kitchen, 
+                            lounge area, en-suite bathroom. Our apartments are fully serviced.</p>
+                            <p class="rate">
+                                <span>R550.00 /</span> Per Night
+                            </p>
+                            <div class="popup" onclick="myFunction()"><button class="popu">Click to make a reservation!</button>
+                                <span class="popuptext" id="myPopup">Are You Sure!?<button type="button" class="btn"><a href="Booking.html" style="text-decoration: none;">Book Now</a></button></span>
+                                
+                              </div>
+
+                              <script>
+                                // When the user clicks on div, open the popup
+                                function myFunction() {
+                                  var popup = document.getElementById("myPopup");
+                                  popup.classList.toggle("show");
+                                }
+                                </script>
+                            
+                    </div>
+                </article>
+                <!--end of single room-->
+
+                 <!---single room-->
+                 <article class="room">
+                    <div class="room-image">
+                       <img src="bed7..png" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Uncapped Wi-Fi
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Coffee and Tea making facilities
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                In room safe deposit box
+                            </li>
+                        </ul>
+                        <p>A comfortable spacious contemporary styled apartment with a full working kitchen, 
+                            lounge area, en-suite bathroom. Our apartments are fully serviced.</p>
+                            <p class="rate">
+                                <span>R750.00 /</span> Per Night
+                            </p>
+                            <div class="popup" onclick="myFunction()"><button class="popu">Click to make a reservation!</button>
+                                <span class="popuptext" id="myPopup">Are You Sure!?<button type="button" class="btn"><a href="Booking.html" style="text-decoration: none;">Book Now</a></button></span>
+                                
+                              </div>
+
+                              <script>
+                                // When the user clicks on div, open the popup
+                                function myFunction() {
+                                  var popup = document.getElementById("myPopup");
+                                  popup.classList.toggle("show");
+                                }
+                                </script>
+                            
+                    </div>
+                </article>
+                <!--end of single room-->
+
+                 <!---single room-->
+                 <article class="room">
+                    <div class="room-image">
+                       <img src="p3.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Uncapped Wi-Fi
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                Coffee and Tea making facilities
+                            </li>
+                            <li>
+                                <i class="fa fas-arrow-alt-circle-right"></i>
+                                In room safe deposit box
+                            </li>
+                        </ul>
+                        <p>A comfortable spacious contemporary styled apartment with a full working kitchen, 
+                            lounge area, en-suite bathroom. Our apartments are fully serviced.</p>
+                            <p class="rate">
+                                <span>R1000.00 /</span> Per Night
+                            </p>
+                            <div class="popup" onclick="myFunction()"><button class="popu">Click to make a reservation!</button>
+                                <span class="popuptext" id="myPopup">Are You Sure!?<button type="button" class="btn"><a href="Booking.html" style="text-decoration: none;">Book Now</a></button></span>
+                                
+                              </div>
+
+                              <script>
+                                // When the user clicks on div, open the popup
+                                function myFunction() {
+                                  var popup = document.getElementById("myPopup");
+                                  popup.classList.toggle("show");
+                                }
+                                </script>
+                            
+                    </div>
+                </article>
+                <!--end of single room-->
+                
+              </div>
+       </section>
+
+
+       <section class="customers" id="customers">
+            <div class="sec-width">
+                <div class="title">
+                    <h2>customers</h2>
+                </div>
+                <div class="customers-container">
+                    
+                    <!---single customer-->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                        </div>
+
+                        <h3>We loved It</h3>
+                        <p>My husband and I had a lovely stay. 
+                            We appreciated the excellent service we received.
+                         We found the staff to be polite and professional in dealing with us.
+                            The room was comfortable, clean and the necessary conveniences we sought were available. Thanks again</p>
+                            <img src="coup.jpg" alt="customer image">
+                            <span>William Marry</span>
+                    </div>
+                    <!---end of single customer-->
+
+                     <!---single customer-->
+                     <div class="customer">
+                        <div class="rating">
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                        </div>
+                        <h3>We had a woderful time</h3>
+                        <p>We had a wonderful relaxing stay at Hlalanathi Bed and Breakfast to celebrate 
+                            our anniversary. We would highly recommend this unique place and we would definitely like to visit them again soon!</p>
+                            <img src="img1.jpg" alt="customer image">
+                            <span>Rory James</span>
+                    </div>
+                    <!---end of single customer-->
+
+                     <!---single customer-->
+                     <div class="customer">
+                        <div class="rating">
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                            <span><i class='bx bxs-star' ></i></span>
+                        </div>
+                        <h3>Comfartable Stay</h3>
+                        <p>Wonderful stay, awesome property,
+                             location is very beautiful,
+                            very great behaviour & freindly,
+                             the food was awesome I recommend. 
+                             Great experience. Loving it</p>
+                            <img src="img2.jpg" alt="customer image">
+                            <span>Chuma Raxoth</span>
+                    </div>
+                    <!---end of single customer-->
+                    
+                    <button class="open-button" onclick="openForm()">Rate-Us</button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Rate-Us</h1>
+
+                                <label for="fname"><b>Full Name</b></label>
+                                <input type="text" placeholder="Enter Full Name" name="fname" required>
+                                
+                                
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="comment"><b>Your Message</b></label>
+                                <textarea rows="5" placeholder="Enter your message"></textarea>
+
+                                <form class="form" action="./upload" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="inputFile" id="inputFile" multiple><br>
+                                    <button class="up" type="submit">Save Files</button>
+                                </form>
+                            
+                                <script>
+                                    const inputFile = document.getElementById("inputFile");
+                            
+                                    input.addEventListener("change", function(){
+                                        for (const file of inputFile.files){
+                                            if (file.size > 300000){
+                                                alert('${file.name} is too big! Max is 300KB');
+                                            }
+                                        }
+                                    })
+                            
+                            
+                                </script>
+                                
+
+                                <div class="star">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                  </div>
+                                
+                                  
+                                <button type="submit" class="btn" onsubmit="return validateForm()" method="post">Submit</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                
+
+                        </form>
+                    </div>
+                        
+
+                        <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                        function validateForm() {
+                            let x = document.forms["myForm"]["fname"].value;
+                            if (x == "") {
+                                alert("Name must be filled out");
+                                return false;
+                            }
+                        }
+                        </script>
+                
+                    </div>
+                </div>
+            </div>
+            
+       </section>
+       
+
+       <!---footer-->
+       <footer class="footer" id="contact">
+             <div class="footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Hlalanathi bed and breakfast
+                         is situated in Cape Town....</p>
+                      <ul class="social-icons">
+                        <li class="flex">
+                            <i class='bx bxl-twitter' ></i>
+                        </li>
+                        <li class="flex">
+                            <i class='bx bxl-facebook-circle' ></i>
+                        </li>
+                        <li class="flex">
+                            <i class='bx bxl-instagram' ></i>
+                        </li>
+                      </ul>
+                </div>
+
+                <div>
+                    <h2> Useful Links</h2>
+                    <a href="#">Blog</a>
+                    <a href="#">Rooms</a>
+                    <a href="#">Subscription</a>
+                    <a href="#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2> Privacy</h2>
+                    <a href="#">Career</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Content</a>
+                    <a href="#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A question</h2>
+                    <div class="contact-item">
+                        <span>
+                            <i class='bx bx-map' ></i>
+                        </span>
+                        <span>
+                            Pals Building, 97 Durham Ave,Salt River,Cape Town,7925
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3017348887356!2d18.458084375759054!3d-33.93336672240604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d08518ba1b9%3A0x1398e85e424f762!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1696337405079!5m2!1sen!2sza" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </span>
+                        <div class="contact-item">
+                            <span>
+                                <i class='bx bxs-phone-call' ></i>
+                            </span>
+                            <span>
+                                +27 733 265 346
+                            </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <i class='bx bxs-envelope' ></i>
+                        </span>
+                        <span>
+                            hlalanathi@gmail.com
+                        </span>
+                </div>
+             </div>
+
+             <!----Cookie zone-->
+             <div class="wrapper" id="wrapper">
+                <img src="cooki.png" alt="">
+                <div class="content">
+                    <header>Cookies Content</header>
+                    <p>This website use cookies to ensure you get the best experience on our website</p>
+                    <div class="buttons">
+                        <button class="item" onclick="wrapper" id="closeAll">Accept All</button>
+                        <button class="item" onclick="wrapper" id="closeAll">Decline</button>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+            document.getElementById('closeAll').addEventListener('click', function () {
+            document.getElementById('wrapper').style.display = 'none';
+            });
+
+
+              /*const cookieBox = document.querySelector(".wrapper"),
+               acceptBtn = cookieBox.querySelector("buttons button"); 
+        
+               acceptBtn.onclick = ()=>{
+                //setting cookie for 1 month, after 1 month cookie will be expired automatically
+               document.cookie = "CookieBy=CodingNepal; max-age="+60*60+24*30;
+               if(document.cookie){ //if the above cookie set
+                cookieBox.classList.add("hide"); //hide cookie box once cookie se
+        
+               }else{
+                alert("Cookie can't be set!"); // if cookie can't be set the alert an an error
+               }
+               }
+               function closeWrapper() {
+                            document.getElementById("wrapper").style.display = "none";
+                        }*/
+
+
+
+            </script>
+       </footer>
+       <!---end of footer-->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
